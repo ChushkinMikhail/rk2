@@ -1,0 +1,3 @@
+/home/vboxuser/ChushkinMikhail/workspace/rk2/build/CMakeFiles/MyProject.dir
+/home/vboxuser/ChushkinMikhail/workspace/rk2/build/CMakeFiles/edit_cache.dir
+/home/vboxuser/ChushkinMikhail/workspace/rk2/build/CMakeFiles/rebuild_cache.dir
