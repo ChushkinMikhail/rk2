@@ -3,23 +3,24 @@
 #include <sstream>
 #include "./../builder.cpp"
 
-TEST(LOLGameDeviceTest, BuildMouseTest) {
+TEST(LOLGameDeviceTest, SetMouseTest) {
   jc::LOLGameDevice LOLBuilder;
   LOLBuilder.BuildMouse();
-  
-  ASSERT_EQ(LOLBuilder.Device().SetMouse(), "Logitech");
+  EXPECT_EQ(LOLBuilder.Device().GetMouse(), "Logitech");
 }
 
-TEST(LOLGameDeviceTest, BuildKeyboardTest) {
-  jc::LOLGameDevice LOLBuilder;
-  LOLBuilder.BuildKeyboard();
-  
-  ASSERT_EQ(LOLBuilder.Device().SetKeyboard(), "Filco");
+TEST(DNFGameDeviceTest, SetKeyboardTest) {
+  jc::DNFGameDevice DNFBuilder;
+  DNFBuilder.BuildKeyboard();
+  EXPECT_EQ(DNFBuilder.Device().GetKeyboard(), "Cherry");
 }
 
-TEST(LOLGameDeviceTest, BuildHeadphoneTest) {
+TEST(LifeTest, CreateDeviceTest) {
+  jc::Life life;
   jc::LOLGameDevice LOLBuilder;
-  LOLBuilder.BuildHeadphone();
+  jc::DeviceSuite LOLDevice = life.CreateDevice(LOLBuilder);
   
-  ASSERT_EQ(LOLBuilder.Device().SetHeadphone(), "Sennheiser");
+  EXPECT_EQ(LOLDevice.GetMouse(), "Logitech");
+  EXPECT_EQ(LOLDevice.GetKeyboard(), "Filco");
+  EXPECT_EQ(LOLDevice.GetHeadphone(), "Sennheiser");
 }
