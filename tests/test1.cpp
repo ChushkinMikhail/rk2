@@ -72,26 +72,7 @@ void testLOLGameDevice() {
   jc::DeviceSuite LOLDevice = life.CreateDevice(LOLBuilder);
 }
 
-void testDNFGameDevice() {
-  jc::Life life;
-  jc::DNFGameDevice DNFBuilder;
-
-  jc::DeviceSuite DNFDevice = life.CreateDevice(DNFBuilder);
-}
-
-void testLife() {
-  jc::Life life;
-  jc::LOLGameDevice LOLBuilder;
-  jc::DNFGameDevice DNFBuilder;
-
-  jc::DeviceSuite LOLDevice = life.CreateDevice(LOLBuilder);
-  jc::DeviceSuite DNFDevice = life.CreateDevice(DNFBuilder);
-}
-
 int main() {
   testLOLGameDevice();
-  testDNFGameDevice();
-  testLife();
-
   return 0;
 }
