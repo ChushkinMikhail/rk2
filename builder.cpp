@@ -71,3 +71,6 @@ int main() {
   jc::DeviceSuite LOLDevice = life.CreateDevice(LOLBuilder);
   jc::DeviceSuite DNFDevice = life.CreateDevice(DNFBuilder);
 }
+
+
+//eto nakonets to konchilos s 7 utra
