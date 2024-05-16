@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/check.dir/tests/test.cpp.o -o check  lib/libgtest_main.a lib/libgtest.a 
+/usr/bin/c++ CMakeFiles/check.dir/tests/test.cpp.o -o check  -lpthread 

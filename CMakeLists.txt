@@ -1,14 +1,24 @@
+
+
+
+
 cmake_minimum_required(VERSION 3.10)
 
-project(MyProject)
+# Название проекта
+project(P1)
 
-add_executable(MyProject builder.cpp)
+# Установить стандарт C++
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-if(BUILD_TESTS)
-  enable_testing()
-  add_subdirectory(third-party/gtest)
-  file(GLOB ${Project}_TEST_SOURCES tests/*.cpp)
-  add_executable(check ${${Project}_TEST_SOURCES})
-  target_link_libraries(check ${Project} gtest_main)
-  add_test(NAME check COMMAND check)
-endif()
+# Добавить исходные файлы
+add_executable(P1 builder.cpp)
+
+# Добавить тесты
+enable_testing()
+include_directories(${GTEST_INCLUDE_DIRS})
+
+add_executable(check tests/test.cpp)
+target_link_libraries(check ${GTEST_LIBRARIES} pthread)
+
+add_test(NAME check COMMAND check)

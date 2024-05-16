@@ -202,7 +202,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=MyProject
+CMAKE_PROJECT_NAME:STATIC=P1
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=1.14.0
@@ -297,6 +297,24 @@ MyProject_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 MyProject_SOURCE_DIR:STATIC=/home/vboxuser/ChushkinMikhail/workspace/rk2
+
+//Value Computed by CMake
+P1_BINARY_DIR:STATIC=/home/vboxuser/ChushkinMikhail/workspace/rk2/build
+
+//Value Computed by CMake
+P1_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+P1_SOURCE_DIR:STATIC=/home/vboxuser/ChushkinMikhail/workspace/rk2
+
+//Value Computed by CMake
+build1_BINARY_DIR:STATIC=/home/vboxuser/ChushkinMikhail/workspace/rk2/build
+
+//Value Computed by CMake
+build1_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+build1_SOURCE_DIR:STATIC=/home/vboxuser/ChushkinMikhail/workspace/rk2
 
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/home/vboxuser/ChushkinMikhail/workspace/rk2/build/third-party/gtest/googlemock
@@ -485,7 +503,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -528,10 +546,17 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding Python3
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/usr/bin/python3.10][cfound components: Interpreter ][v3.10.12()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
+//Path to a program.
+_Python3_EXECUTABLE:INTERNAL=/usr/bin/python3.10
+//Python3 Properties
+_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;10;12;64;;cpython-310-x86_64-linux-gnu;/usr/lib/python3.10;/usr/lib/python3.10;/usr/local/lib/python3.10/dist-packages;/usr/local/lib/python3.10/dist-packages
+_Python3_INTERPRETER_SIGNATURE:INTERNAL=b91b4035ecb3bb3f5760d35922531bcd
 cmake_package_name:INTERNAL=GTest
 generated_dir:INTERNAL=/home/vboxuser/ChushkinMikhail/workspace/rk2/build/third-party/gtest/googletest/generated
 //ADVANCED property for variable: gmock_build_tests

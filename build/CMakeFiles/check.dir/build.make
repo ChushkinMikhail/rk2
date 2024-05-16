@@ -92,8 +92,6 @@ check_EXTERNAL_OBJECTS =
 
 check: CMakeFiles/check.dir/tests/test.cpp.o
 check: CMakeFiles/check.dir/build.make
-check: lib/libgtest_main.a
-check: lib/libgtest.a
 check: CMakeFiles/check.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vboxuser/ChushkinMikhail/workspace/rk2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable check"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/check.dir/link.txt --verbose=$(VERBOSE)
