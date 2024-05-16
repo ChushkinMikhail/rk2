@@ -7,11 +7,6 @@ cmake_minimum_required(VERSION 3.10)
 # Название проекта
 project(P1)
 
-# Установить стандарт C++
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED True)
-
-# Добавить исходные файлы
 add_executable(P1 builder.cpp)
 
 # Добавить тесты
