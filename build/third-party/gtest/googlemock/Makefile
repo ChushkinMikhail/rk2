@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/ChushkinMikhail/workspace/rk2/build/CMakeFiles /home/vboxuser/ChushkinMikhail/workspace/rk2/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/vboxuser/ChushkinMikhail/workspace/rk2/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/ChushkinMikhail/workspace/rk2/build/CMakeFiles /home/vboxuser/ChushkinMikhail/workspace/rk2/build/third-party/gtest/googlemock//CMakeFiles/progress.marks
+	cd /home/vboxuser/ChushkinMikhail/workspace/rk2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third-party/gtest/googlemock/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/ChushkinMikhail/workspace/rk2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/vboxuser/ChushkinMikhail/workspace/rk2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third-party/gtest/googlemock/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,144 +158,94 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/vboxuser/ChushkinMikhail/workspace/rk2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third-party/gtest/googlemock/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/vboxuser/ChushkinMikhail/workspace/rk2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third-party/gtest/googlemock/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/vboxuser/ChushkinMikhail/workspace/rk2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named MyProject
+# Convenience name for target.
+third-party/gtest/googlemock/CMakeFiles/gmock.dir/rule:
+	cd /home/vboxuser/ChushkinMikhail/workspace/rk2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third-party/gtest/googlemock/CMakeFiles/gmock.dir/rule
+.PHONY : third-party/gtest/googlemock/CMakeFiles/gmock.dir/rule
 
-# Build rule for target.
-MyProject: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyProject
-.PHONY : MyProject
-
-# fast build rule for target.
-MyProject/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/build
-.PHONY : MyProject/fast
-
-#=============================================================================
-# Target rules for targets named check
-
-# Build rule for target.
-check: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 check
-.PHONY : check
-
-# fast build rule for target.
-check/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/check.dir/build.make CMakeFiles/check.dir/build
-.PHONY : check/fast
-
-#=============================================================================
-# Target rules for targets named gmock
-
-# Build rule for target.
-gmock: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock
+# Convenience name for target.
+gmock: third-party/gtest/googlemock/CMakeFiles/gmock.dir/rule
 .PHONY : gmock
 
 # fast build rule for target.
 gmock/fast:
-	$(MAKE) $(MAKESILENT) -f third-party/gtest/googlemock/CMakeFiles/gmock.dir/build.make third-party/gtest/googlemock/CMakeFiles/gmock.dir/build
+	cd /home/vboxuser/ChushkinMikhail/workspace/rk2/build && $(MAKE) $(MAKESILENT) -f third-party/gtest/googlemock/CMakeFiles/gmock.dir/build.make third-party/gtest/googlemock/CMakeFiles/gmock.dir/build
 .PHONY : gmock/fast
 
-#=============================================================================
-# Target rules for targets named gmock_main
+# Convenience name for target.
+third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/rule:
+	cd /home/vboxuser/ChushkinMikhail/workspace/rk2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/rule
+.PHONY : third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/rule
 
-# Build rule for target.
-gmock_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_main
+# Convenience name for target.
+gmock_main: third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/rule
 .PHONY : gmock_main
 
 # fast build rule for target.
 gmock_main/fast:
-	$(MAKE) $(MAKESILENT) -f third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/build.make third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/build
+	cd /home/vboxuser/ChushkinMikhail/workspace/rk2/build && $(MAKE) $(MAKESILENT) -f third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/build.make third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/build
 .PHONY : gmock_main/fast
 
-#=============================================================================
-# Target rules for targets named gtest
-
-# Build rule for target.
-gtest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
-.PHONY : gtest
-
-# fast build rule for target.
-gtest/fast:
-	$(MAKE) $(MAKESILENT) -f third-party/gtest/googletest/CMakeFiles/gtest.dir/build.make third-party/gtest/googletest/CMakeFiles/gtest.dir/build
-.PHONY : gtest/fast
-
-#=============================================================================
-# Target rules for targets named gtest_main
-
-# Build rule for target.
-gtest_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
-.PHONY : gtest_main
-
-# fast build rule for target.
-gtest_main/fast:
-	$(MAKE) $(MAKESILENT) -f third-party/gtest/googletest/CMakeFiles/gtest_main.dir/build.make third-party/gtest/googletest/CMakeFiles/gtest_main.dir/build
-.PHONY : gtest_main/fast
-
-builder.o: builder.cpp.o
-.PHONY : builder.o
+src/gmock-all.o: src/gmock-all.cc.o
+.PHONY : src/gmock-all.o
 
 # target to build an object file
-builder.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/builder.cpp.o
-.PHONY : builder.cpp.o
+src/gmock-all.cc.o:
+	cd /home/vboxuser/ChushkinMikhail/workspace/rk2/build && $(MAKE) $(MAKESILENT) -f third-party/gtest/googlemock/CMakeFiles/gmock.dir/build.make third-party/gtest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+.PHONY : src/gmock-all.cc.o
 
-builder.i: builder.cpp.i
-.PHONY : builder.i
+src/gmock-all.i: src/gmock-all.cc.i
+.PHONY : src/gmock-all.i
 
 # target to preprocess a source file
-builder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/builder.cpp.i
-.PHONY : builder.cpp.i
+src/gmock-all.cc.i:
+	cd /home/vboxuser/ChushkinMikhail/workspace/rk2/build && $(MAKE) $(MAKESILENT) -f third-party/gtest/googlemock/CMakeFiles/gmock.dir/build.make third-party/gtest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.i
+.PHONY : src/gmock-all.cc.i
 
-builder.s: builder.cpp.s
-.PHONY : builder.s
+src/gmock-all.s: src/gmock-all.cc.s
+.PHONY : src/gmock-all.s
 
 # target to generate assembly for a file
-builder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/builder.cpp.s
-.PHONY : builder.cpp.s
+src/gmock-all.cc.s:
+	cd /home/vboxuser/ChushkinMikhail/workspace/rk2/build && $(MAKE) $(MAKESILENT) -f third-party/gtest/googlemock/CMakeFiles/gmock.dir/build.make third-party/gtest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.s
+.PHONY : src/gmock-all.cc.s
 
-tests/test.o: tests/test.cpp.o
-.PHONY : tests/test.o
+src/gmock_main.o: src/gmock_main.cc.o
+.PHONY : src/gmock_main.o
 
 # target to build an object file
-tests/test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/check.dir/build.make CMakeFiles/check.dir/tests/test.cpp.o
-.PHONY : tests/test.cpp.o
+src/gmock_main.cc.o:
+	cd /home/vboxuser/ChushkinMikhail/workspace/rk2/build && $(MAKE) $(MAKESILENT) -f third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/build.make third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+.PHONY : src/gmock_main.cc.o
 
-tests/test.i: tests/test.cpp.i
-.PHONY : tests/test.i
+src/gmock_main.i: src/gmock_main.cc.i
+.PHONY : src/gmock_main.i
 
 # target to preprocess a source file
-tests/test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/check.dir/build.make CMakeFiles/check.dir/tests/test.cpp.i
-.PHONY : tests/test.cpp.i
+src/gmock_main.cc.i:
+	cd /home/vboxuser/ChushkinMikhail/workspace/rk2/build && $(MAKE) $(MAKESILENT) -f third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/build.make third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.i
+.PHONY : src/gmock_main.cc.i
 
-tests/test.s: tests/test.cpp.s
-.PHONY : tests/test.s
+src/gmock_main.s: src/gmock_main.cc.s
+.PHONY : src/gmock_main.s
 
 # target to generate assembly for a file
-tests/test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/check.dir/build.make CMakeFiles/check.dir/tests/test.cpp.s
-.PHONY : tests/test.cpp.s
+src/gmock_main.cc.s:
+	cd /home/vboxuser/ChushkinMikhail/workspace/rk2/build && $(MAKE) $(MAKESILENT) -f third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/build.make third-party/gtest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.s
+.PHONY : src/gmock_main.cc.s
 
 # Help Target
 help:
@@ -310,18 +260,14 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... MyProject"
-	@echo "... check"
 	@echo "... gmock"
 	@echo "... gmock_main"
-	@echo "... gtest"
-	@echo "... gtest_main"
-	@echo "... builder.o"
-	@echo "... builder.i"
-	@echo "... builder.s"
-	@echo "... tests/test.o"
-	@echo "... tests/test.i"
-	@echo "... tests/test.s"
+	@echo "... src/gmock-all.o"
+	@echo "... src/gmock-all.i"
+	@echo "... src/gmock-all.s"
+	@echo "... src/gmock_main.o"
+	@echo "... src/gmock_main.i"
+	@echo "... src/gmock_main.s"
 .PHONY : help
 
 
@@ -333,6 +279,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/vboxuser/ChushkinMikhail/workspace/rk2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
