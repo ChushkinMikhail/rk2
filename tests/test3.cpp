@@ -72,6 +72,11 @@ void testLife() {
 
   jc::DeviceSuite LOLDevice = life.CreateDevice(LOLBuilder);
   jc::DeviceSuite DNFDevice = life.CreateDevice(DNFBuilder);
+  
+  if (LOLDevice != 0 && DNFDivice != 0){
+  	std::cout<<"Succecfull test3"<<std::endl;
+  }
+  else std::cout<<"Unuccecfull test3"<<std::endl;
 }
 
 int main() {

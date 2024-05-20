@@ -24,15 +24,10 @@ class GameDevice {
 class LOLGameDevice : public GameDevice {
  public:
   LOLGameDevice() : device_(std::make_unique<DeviceSuite>()) {}
-
   void BuildMouse() override { device_->SetMouse("Logitech"); }
-
   void BuildKeyboard() override { device_->SetKeyboard("Filco"); }
-
   void BuildHeadphone() override { device_->SetHeadphone("Sennheiser"); }
-
   DeviceSuite& Device() const override { return *device_; }
-
  private:
   std::unique_ptr<DeviceSuite> device_;
 };
@@ -40,15 +35,10 @@ class LOLGameDevice : public GameDevice {
 class DNFGameDevice : public GameDevice {
  public:
   DNFGameDevice() : device_(std::make_unique<DeviceSuite>()) {}
-
   void BuildMouse() override { device_->SetMouse("Razer"); }
-
   void BuildKeyboard() override { device_->SetKeyboard("Cherry"); }
-
   void BuildHeadphone() override { device_->SetHeadphone("Beyerdynamic"); }
-
   DeviceSuite& Device() const override { return *device_; }
-
  private:
   std::unique_ptr<DeviceSuite> device_;
 };
@@ -70,6 +60,11 @@ void testLOLGameDevice() {
   jc::LOLGameDevice LOLBuilder;
 
   jc::DeviceSuite LOLDevice = life.CreateDevice(LOLBuilder);
+  
+  if (LOLDevice != 0){
+  	std::cout<<"Succecfull test1"<<std::endl;
+  }
+  else std::cout<<"Unuccecfull test1"<<std::endl;
 }
 
 int main() {
