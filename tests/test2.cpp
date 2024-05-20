@@ -71,7 +71,7 @@ void testDNFGameDevice() {
 
   jc::DeviceSuite DNFDevice = life.CreateDevice(DNFBuilder);
   
-  if (DNFDevice != 0){
+  if (DNFDevice != jc::DeviceSuite{}){
   	std::cout<<"Succecfull test2"<<std::endl;
   }
   else std::cout<<"Unuccecfull test2"<<std::endl;
