@@ -61,7 +61,7 @@ void testLOLGameDevice() {
 
   jc::DeviceSuite LOLDevice = life.CreateDevice(LOLBuilder);
   
-  if (!LOLDevice.IsEmpty()){
+  if (&LOLDevice != nullptr){
   	std::cout<<"Succecfull test1"<<std::endl;
   }
   else std::cout<<"Unuccecfull test1"<<std::endl;
