@@ -71,7 +71,7 @@ void testLife() {
   jc::DNFGameDevice DNFBuilder;
 
   jc::DeviceSuite *LOLDevice = nullptr;
-  jc::DeviceSuite DNFDevice = life.CreateDevice(DNFBuilder);
+  jc::DeviceSuite *DNFDevice = nullptr;
   
   if (&LOLDevice != nullptr && &DNFDevice != nullptr){
   	std::cout<<"Succecfull test3"<<std::endl;
