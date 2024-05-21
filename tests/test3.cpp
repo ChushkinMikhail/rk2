@@ -70,7 +70,7 @@ void testLife() {
   jc::LOLGameDevice LOLBuilder;
   jc::DNFGameDevice DNFBuilder;
 
-  jc::DeviceSuite LOLDevice = nullptr;
+  jc::DeviceSuite *LOLDevice = nullptr;
   jc::DeviceSuite DNFDevice = life.CreateDevice(DNFBuilder);
   
   if (&LOLDevice != nullptr && &DNFDevice != nullptr){
