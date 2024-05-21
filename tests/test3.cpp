@@ -70,8 +70,8 @@ void testLife() {
   jc::LOLGameDevice LOLBuilder;
   jc::DNFGameDevice DNFBuilder;
 
-  jc::DeviceSuite *LOLDevice = nullptr;
-  jc::DeviceSuite *DNFDevice = nullptr;
+  jc::DeviceSuite LOLDevice = life.CreateDevice(LOLBuilder);
+  jc::DeviceSuite DNFDevice = life.CreateDevice(DNFBuilder);
   
   if (&LOLDevice != nullptr && &DNFDevice != nullptr){
   	std::cout<<"Succecfull test3"<<std::endl;
